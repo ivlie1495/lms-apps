@@ -7,7 +7,7 @@ import { isTeacher } from '@/utils/role'
 const TeacherLayout = ({ children }: PropsWithChildren) => {
   const { userId } = auth()
 
-  if (isTeacher(userId)) {
+  if (!isTeacher(userId)) {
     return redirect('/')
   }
 
