@@ -20,7 +20,6 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 import { toast } from '@/components/ui/use-toast'
-import Preview from '@/components/preview'
 import { cn } from '@/utils/ui'
 
 const formSchema = z.object({
